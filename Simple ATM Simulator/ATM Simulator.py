@@ -1,4 +1,4 @@
-# Simple ATM Simulator
+# 📌 Simple ATM Simulator
 
 # Fixed PIN for authentication
 PIN = "1234"
@@ -6,15 +6,12 @@ PIN = "1234"
 balance = 0
 # Maximum number of PIN attempts allowed
 attempts = 3
-
 # Loop to allow PIN entry with limited attempts
 while attempts > 0:
     entered_pin = input("Enter your PIN: ")
-
     # Check if entered PIN matches the fixed PIN
     if entered_pin == PIN:
         print("✅ Login successful!\n")
-
         # Keep showing menu until user chooses to exit
         while True:
             print("--- ATM Menu ---")
@@ -22,14 +19,11 @@ while attempts > 0:
             print("2. Deposit Money")
             print("3. Withdraw Money")
             print("4. Exit")
-
             # User input for menu choice
             choice = input("Enter your choice: ")
-
             # Check Balance
             if choice == "1":
                 print(f"💰 Your balance is: {balance}\n")
-
             # Deposit Money
             elif choice == "2":
                 amount = int(input("Enter amount to deposit: "))
@@ -38,7 +32,6 @@ while attempts > 0:
                     print(f"✅ Deposit successful! New Balance: {balance}\n")
                 else:
                     print("❌ Invalid deposit amount! Please try again.\n")
-
             # Withdraw Money
             elif choice == "3":
                 amount = int(input("Enter amount to withdraw: "))
@@ -47,12 +40,10 @@ while attempts > 0:
                     print(f"✅ Withdrawal successful! New Balance: {balance}\n")
                 else:
                     print("❌ Insufficient balance or invalid amount!\n")
-
             # Exit
             elif choice == "4":
                 print("🙏 Thank you for using the ATM. Goodbye!")
                 exit()  # End program
-
             # Invalid Menu Choice
             else:
                 print("Invalid choice. Please try again.\n")
@@ -61,7 +52,6 @@ while attempts > 0:
         # Decrease attempts if PIN is wrong
         attempts -= 1
         print(f"❌ Incorrect PIN! Attempts left: {attempts}")
-
         # If no attempts left, lock the account
         if attempts == 0:
             print("🚫 Too many incorrect attempts. Your account is locked!")
