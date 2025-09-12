@@ -1,8 +1,5 @@
 # 📌 SIMPLE EXPENSE TRACKER
 
-# Author - Hrituraj Saha
-# Date - 11/09/2025
-
 # 🎯 Project Goals -
 #  - Track personal expenses in different categories.
 #  - Provide total and category-wise expense reports.
@@ -16,21 +13,15 @@
 # 5. Password login.
 # 6. Budget alerts if category spending exceeds limit.
 
-
 import sys
-
 # Configuration
 CATEGORIES = ["Food", "Transport", "Entertainment", "Shopping", "Bills", "Others"]
-
 # Default budget set for each category
 BUDGETS = {category: 5000 for category in CATEGORIES}
-
 # Password for login
 PASSWORD = "1234"
-
 # List to store all expenses as dictionaries
 expenses = []
-
 # Helper Functions
 def login():
     """
@@ -51,7 +42,6 @@ def login():
     # If all 3 attempts fail, exit program
     print("❌ Too many failed attempts. Exiting.")
     sys.exit()
-
 def add_expense():
     """
     Add a new expense:
@@ -85,14 +75,12 @@ def add_expense():
     except ValueError:
         # Catch invalid number inputs
         print("⚠️ Invalid input. Please enter numeric values where required.")
-
 def view_total():
     """
     Show total amount spent across all categories.
     """
     total = sum(e["amount"] for e in expenses)
     print(f"\n💰 Total Expenses: {total}")
-
 def view_by_category():
     """
     Show total spending per category.
@@ -102,7 +90,6 @@ def view_by_category():
     for category in CATEGORIES:
         total_cat = sum(e["amount"] for e in expenses if e["category"] == category)
         print(f"{category}: {total_cat}")
-
 def summary_report():
     """
     Display a final report before exit:
@@ -122,7 +109,6 @@ def summary_report():
         print(f"Lowest spending: {lowest} ({category_totals[lowest]})")
     else:
         print("No expenses recorded.")
-
 def main_menu():
     """
     Main program loop:
@@ -150,7 +136,6 @@ def main_menu():
             break
         else:
             print("⚠️ Invalid choice. Please enter 1-4.")
-
 # Program Entry Point
 if __name__ == "__main__":
     print("🔒 Welcome to Expense Tracker")
