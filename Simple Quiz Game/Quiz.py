@@ -86,7 +86,6 @@ quiz_questions = [
         "answer": "B"
     }
 ]
-
 # Function to Run Quiz for a Single Player
 def play_quiz(player_name, question_pool, num_questions=5):
     """
@@ -100,31 +99,25 @@ def play_quiz(player_name, question_pool, num_questions=5):
     """
     print(f"\n👤 Welcome, {player_name}! Let's start the quiz.\n")
     score = 0
-
     # Select random questions from the shared pool
     selected_questions = random.sample(question_pool, min(num_questions, len(question_pool)))
     for q in selected_questions:
         print(f"Q: {q['question']}")
         for option in q['options']:
             print(option)
-
         # Get player's answer
         answer = input("Your choice (A/B/C/D): ").strip().upper()
-
         # Validate and check answer
         if answer == q["answer"]:
             print("✅ Correct!\n")
             score += 1
         else:
             print(f"❌ Wrong! The correct answer was: {q['answer']}\n")
-
         # Remove asked question so it won’t repeat for other players
         question_pool.remove(q)
-
     # Show player's final score
     print(f"🎯 {player_name}, your final score: {score}/{len(selected_questions)}\n")
     return score
-
 # Main Program
 def main():
     """
@@ -134,34 +127,27 @@ def main():
     question_pool = quiz_questions.copy()  # Shared pool for all players
     scoreboard = {}  # Dictionary to store player names and scores
     print("===== 🎮 Welcome to the Quiz Game! 🎮 =====")
-    
     # Keep playing while there are questions left
     while question_pool:
-        
         # Get player name
         player_name = input("\nEnter player name: ").strip()
-
         # Run quiz for the player
         score = play_quiz(player_name, question_pool)
         scoreboard[player_name] = score
-
         # If no questions remain, stop
         if not question_pool:
             print("\n⚠ No more questions left in the pool!")
             break
-
         # Ask if another player wants to join
         choice = input("Do you want another player to play? (yes/no): ").strip().lower()
         if choice != "yes":
             break
-
     # Display final scoreboard (ranked by score)
     print("\n===== 🏆 Final Scoreboard 🏆 =====")
     ranked_scores = sorted(scoreboard.items(), key=lambda x: x[1], reverse=True)
     for rank, (player, score) in enumerate(ranked_scores, start=1):
         print(f"{rank}. {player}: {score}")
     print("\n✅ Game Over! Thanks for playing.")
-
 # Run the Game
 if __name__ == "__main__":
     main()
