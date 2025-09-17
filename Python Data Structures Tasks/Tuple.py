@@ -1,4 +1,4 @@
-# 2️⃣ TUPLE TASKS
+# TUPLE TASKS
 
 # Create a tuple of 5 cities
 cities = ("New York", "Paris", "Tokyo", "London", "Paris")
