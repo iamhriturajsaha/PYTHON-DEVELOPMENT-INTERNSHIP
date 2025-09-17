@@ -1,4 +1,4 @@
-# 4️⃣ DICTIONARY TASKS
+# DICTIONARY TASKS
 
 # Create a dictionary of 5 students
 marks = {
