@@ -1,4 +1,4 @@
-# 1️⃣ LIST TASKS
+# LIST TASKS
 
 # Create a list of 10 student names
 students = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah", "Ian", "Julia"]
