@@ -1,4 +1,4 @@
-# 3️⃣ SET TASKS
+# SET TASKS
 
 # Create a set of 10 roll numbers (with duplicates)
 roll_numbers = {101, 102, 103, 104, 105, 101, 106, 107, 108, 102}
