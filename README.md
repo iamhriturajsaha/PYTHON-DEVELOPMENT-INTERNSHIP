@@ -15,7 +15,7 @@ A comprehensive collection of Python projects developed during my internship at 
   - Instant feedback mechanism.
 - **Tech -** Conditional statements, loops, dictionaries, functions.
 
-#### 2. **Number Guessing Game**
+#### 2. **Simple Number Guessing Game**
 > *Random number guessing challenge.*
 
 - **Features -**
@@ -24,7 +24,7 @@ A comprehensive collection of Python projects developed during my internship at 
   - Attempt-based scoring.
 - **Tech -** Random module, loops, conditional logic.
 
-#### 3. **Expense Tracker**
+#### 3. **Simple Expense Tracker**
 > *Personal finance management tool.*
 
 - **Features -**
@@ -33,7 +33,7 @@ A comprehensive collection of Python projects developed during my internship at 
   - Structured data storage.
 - **Tech -** Lists, dictionaries, optional file handling.
 
-#### 4. **ATM Simulator**
+#### 4. **Simple ATM Simulator**
 > *Banking system simulation.*
 
 - **Features -**
@@ -42,7 +42,7 @@ A comprehensive collection of Python projects developed during my internship at 
   - Transaction history.
 - **Tech -** Functions, loops, error handling.
 
-#### 5. **Data Structures Operations**
+#### 5. **Python Data Structures Operations**
 > *Python data structures exploration.*
 
 - **Features -**
@@ -86,4 +86,3 @@ A comprehensive collection of Python projects developed during my internship at 
 | **OOP Concepts** | ✅ Classes, objects, inheritance, polymorphism |
 | **Problem Solving** | ✅ Algorithm design, debugging, optimization |
 | **Software Development** | ✅ Code organization, documentation, testing |
-
