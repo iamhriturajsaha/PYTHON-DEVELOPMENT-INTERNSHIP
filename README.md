@@ -7,7 +7,7 @@ A comprehensive collection of Python projects developed during my internship at 
 ### 🔸 Minor Projects
 
 #### 1. **Simple Quiz Game**
-> *Interactive command-line quiz application*
+> *Interactive command-line quiz application.*
 
 - **Features -**
   - Multiple-choice question system.
@@ -16,7 +16,7 @@ A comprehensive collection of Python projects developed during my internship at 
 - **Tech -** Conditional statements, loops, dictionaries, functions.
 
 #### 2. **Number Guessing Game**
-> *Random number guessing challenge*
+> *Random number guessing challenge.*
 
 - **Features -**
   - Random number generation.
@@ -25,7 +25,7 @@ A comprehensive collection of Python projects developed during my internship at 
 - **Tech -** Random module, loops, conditional logic.
 
 #### 3. **Expense Tracker**
-> *Personal finance management tool*
+> *Personal finance management tool.*
 
 - **Features -**
   - Add and categorize expenses.
@@ -34,7 +34,7 @@ A comprehensive collection of Python projects developed during my internship at 
 - **Tech -** Lists, dictionaries, optional file handling.
 
 #### 4. **ATM Simulator**
-> *Banking system simulation*
+> *Banking system simulation.*
 
 - **Features -**
   - PIN-based authentication.
@@ -43,7 +43,7 @@ A comprehensive collection of Python projects developed during my internship at 
 - **Tech -** Functions, loops, error handling.
 
 #### 5. **Data Structures Operations**
-> *Python data structures exploration*
+> *Python data structures exploration.*
 
 - **Features -**
   - Comprehensive operations on built-in data types.
@@ -54,7 +54,7 @@ A comprehensive collection of Python projects developed during my internship at 
 ### 🔸 Major Project
 
 #### 6. **Cab Fare Estimator** ⭐
-> *Object-Oriented cab fare calculation system*
+> *Object-Oriented cab fare calculation system.*
 
 - **Features -**
   - Class-based architecture (Cab, Ride, Customer).
@@ -86,3 +86,4 @@ A comprehensive collection of Python projects developed during my internship at 
 | **OOP Concepts** | ✅ Classes, objects, inheritance, polymorphism |
 | **Problem Solving** | ✅ Algorithm design, debugging, optimization |
 | **Software Development** | ✅ Code organization, documentation, testing |
+
