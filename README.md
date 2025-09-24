@@ -1,4 +1,4 @@
-# Python Development Internship
+# 🐍Python Development Internship
 
 A comprehensive collection of Python projects developed during my internship at **Techsolid Development**. This repository demonstrates practical application of Python programming fundamentals, Object-Oriented Programming (OOP) and problem-solving methodologies through 5 minor projects and 1 major project.
 
